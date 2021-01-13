@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/QuestionLabel"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerView" />
+
+    <TextView
+        android:id="@+id/questionContentTextView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/QuestionContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/questionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextView" />
+
+    <TextView
+        android:id="@+id/answerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/AnswerLabel"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/questionContentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/questionContentTextView" />
+
+    <TextView
+        android:id="@+id/answerContentTextView"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:text="@string/AnswerContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/answerTextView"
+        app:layout_constraintTop_toBottomOf="@+id/answerTextView" />
+
+    <TextView
+        android:id="@+id/valueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ValueLabel"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/answerContentTextView"
+        app:layout_constraintTop_toBottomOf="@+id/answerContentTextView" />
+
+    <TextView
+        android:id="@+id/valueContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ValueContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toEndOf="@+id/valueTextView"
+        app:layout_constraintTop_toTopOf="@+id/valueTextView" />
+
+    <TextView
+        android:id="@+id/createdAtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/CreatedAtLabel"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/valueTextView"
+        app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
+
+    <TextView
+        android:id="@+id/createdAtContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CreatedAtContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toEndOf="@+id/createdAtTextView"
+        app:layout_constraintTop_toTopOf="@+id/createdAtTextView" />
+
+    <TextView
+        android:id="@+id/categoryTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/CategoryTitleLabel"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/createdAtTextView"
+        app:layout_constraintTop_toBottomOf="@+id/createdAtTextView"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <TextView
+        android:id="@+id/categoryTitleContentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CategoryTitleContent"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryTitleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toEndOf="@+id/categoryTitleTextView" />
+
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="#8C9EA3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

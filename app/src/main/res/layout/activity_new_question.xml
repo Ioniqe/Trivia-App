@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewQuestionActivity">
+
+    <TextView
+        android:id="@+id/questionNewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="124dp"
+        android:text="@string/questionNewLabel"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/questionNewEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/questionNewContent"
+        app:layout_constraintBottom_toBottomOf="@+id/questionNewTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/questionNewTextView"
+        app:layout_constraintTop_toTopOf="@+id/questionNewTextView"
+        app:layout_constraintVertical_bias="0.423"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/errorNewQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:text="@string/errorNewQuestion"
+        android:textColor="@color/colorRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/questionNewEditText"
+        app:layout_constraintTop_toBottomOf="@+id/questionNewEditText" />
+
+    <TextView
+        android:id="@+id/answerNewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/answerNewLabel"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/questionNewTextView"
+        app:layout_constraintTop_toBottomOf="@+id/questionNewTextView" />
+
+    <EditText
+        android:id="@+id/answerNewEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/answerNewContent"
+        app:layout_constraintBottom_toBottomOf="@+id/answerNewTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/questionNewEditText"
+        app:layout_constraintTop_toTopOf="@+id/answerNewTextView"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/errorNewAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:text="@string/errorNewAnswer"
+        android:textColor="@color/colorRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/answerNewEditText"
+        app:layout_constraintTop_toBottomOf="@+id/answerNewEditText" />
+
+    <TextView
+        android:id="@+id/valueNewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/valueNewLabel"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/answerNewTextView"
+        app:layout_constraintTop_toBottomOf="@+id/answerNewTextView" />
+
+    <EditText
+        android:id="@+id/valueNewEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:text="@string/valueNewContent"
+        app:layout_constraintBottom_toBottomOf="@+id/valueNewTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/answerNewEditText"
+        app:layout_constraintTop_toTopOf="@+id/valueNewTextView"
+        app:layout_constraintVertical_bias="0.538"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/errorNewValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:text="@string/errorNewValue"
+        android:textColor="@color/colorRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/valueNewEditText"
+        app:layout_constraintTop_toBottomOf="@+id/valueNewEditText" />
+
+    <TextView
+        android:id="@+id/categoryNewTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/categoryNewLabel"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/valueNewTextView"
+        app:layout_constraintTop_toBottomOf="@+id/valueNewTextView" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryNewTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/valueNewEditText"
+        app:layout_constraintTop_toTopOf="@+id/categoryNewTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Trivia</string>
+    <string name="DownloadQuestions">Descarca</string>
+    <string name="QuestionsLabel">Intrebari</string>
+    <string name="AddQuestion">Adauga Intrebare</string>
+    <string name="ErrorMessage"></string>
+    <string name="NumberOfQuestions">Numar intrebari</string>
+    <string name="QuestionLabel">Intrebare:</string>
+    <string name="QuestionContent">question content</string>
+    <string name="AnswerLabel">Raspuns:</string>
+    <string name="AnswerContent">answer content</string>
+    <string name="ValueLabel">Valoare:</string>
+    <string name="ValueContent">value content</string>
+    <string name="CreatedAtLabel">Creat la data de:</string>
+    <string name="CreatedAtContent">created at content</string>
+    <string name="CategoryTitleLabel">Category Title:</string>
+    <string name="CategoryTitleContent">category title content</string>
+
+    <string name="questionNewLabel">Intrebare:</string>
+    <string name="answerNewLabel">Raspuns:</string>
+    <string name="valueNewLabel">Valoare:</string>
+    <string name="categoryNewLabel">Categorie:</string>
+    <string name="questionNewContent" />
+    <string name="answerNewContent" />
+    <string name="valueNewContent" />
+
+    <string name="errorNewQuestion"></string>
+    <string name="errorNewAnswer"></string>
+    <string name="errorNewValue"></string>
+    <string name="idLabel">id:</string>
+    <string name="idContent" />
+
+
+    <string-array name="categories">
+        <item>Muzica</item>
+        <item>Geografie</item>
+        <item>Istorie</item>
+        <item>Personalitati</item>
+    </string-array>
+</resources>
